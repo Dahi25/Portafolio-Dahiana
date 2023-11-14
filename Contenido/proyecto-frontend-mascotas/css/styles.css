@@ -1,0 +1,264 @@
+img.card-img-top-none{
+    width: auto;
+}
+.img-thumbnail{
+    border: 0px;
+}
+
+.navbar-brand{
+    color: #199400;
+    font-weight: bold;
+}
+.collapse .navbar-collapse{
+    color:#1bc3eb ;
+}
+.nav-link{
+    color:#199400;
+}
+.navbar-toggler{
+   background-color: 1bc3eb;
+}
+.imagenes{
+    height: 540px;
+    width: 100%;
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #1bc3eb;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #1bc3eb;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #1bc3eb;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+.descripcion{
+    color: gray;
+    padding-top: 50px;
+    font-size: 30px;
+   text-align:center;
+}
+.card-body{
+    padding:0px;
+}
+.card{
+    border: none;
+}
+p{
+    text-align: center;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+    color: gray;
+    font-weight: bold;
+}
+.trabajo{
+height:300px;
+width: 100%;
+}
+.subtitulo1{
+    text-align: left;
+    padding-left: 40px;
+    color:#1bc3eb;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.subtitulo2{
+    text-align: left;
+    padding-left: 40px;
+    color:#199400;
+}
+.historia{
+    text-align: justify;
+    padding-left: 40px;
+    color:gray;
+    padding-right: 40px;
+}
+/*img.iconos{
+ padding-right: 10px;
+
+}*/
+span{
+    padding-left: 100px;
+    color: gray;
+    font-weight: 600;
+}
+.icons{
+display:inline-block;
+    
+}
+.card-title{
+    color: #199400;
+    text-align: center;
+}
+.card-text:last-child{
+    font-weight:200;
+}
+.cargo{
+    text-align: left;
+    padding-left: 40px;
+    color: #199400;
+    padding-top: 40px;
+}
+.descripcionc{
+    text-align: left;
+    padding-left: 40px;
+}
+.points{
+    text-align: left;
+}
+.list-group-item{
+    border: none;
+    text-align: left;
+    padding-left: 40px;
+}
+ul{
+    text-align: left;
+    padding-left: 50px;
+}
+.postulacion{
+    top:50px;
+    margin-left: 20px; /*da espacio al lado izquierdo*/
+    border-color: #1bc3eb;
+    color: #199400;
+    font-weight: bold;
+}
+.card-img-top{
+    height: 92px;
+    width: 92px;
+   position:center;
+}
+img.card-img-top{
+    text-align: center;
+    margin-left: 150px;
+}
+.descripcionc{
+    color: grey;
+}
+li{
+    color:gray;
+}
+.list-group-item{
+    color: grey;
+}
+.contactanos{
+    height: 600px;
+    width: 100%;
+}
+.sugerencia{
+    color: grey;
+     padding-top:50px;
+     text-align: center;
+}
+.input{
+    padding-left: 90px;
+}
+.enviar{
+    top:50px;
+   padding-left: 0%;
+    border-color: #1bc3eb;
+    color: #199400;
+    font-weight: bold;
+}
+#exampleFormControlInput1{
+    padding-left: 60px;
+}
+#contacto{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.numero{
+    padding-top: 30px;
+}
+.pie-pagina .grupo-1 .box h2{
+    text-align: center;
+}
+.ubicacion{
+    display: block;
+     margin: auto; 
+}
+.sociales{
+    padding-left: 20px;
+}
+.form-label{
+    color: #1bc3eb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#comprar{
+  display: flex;
+  justify-content: center;
+}
+.card-body{
+    padding-bottom: 80px;
+}
+.alimentacion{
+    text-align: center;
+    color: #1bc3eb;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card-img-top-center-smll{
+    width: 422px;
+}
+.accordion-body{
+    color: grey;
+}
+.accordion-button{
+    color: #199400;
+}
+.novedad{
+    width: 100%;
+}

@@ -1,0 +1,35 @@
+body{
+   /* background-color: black;*/
+}
+.logo{
+    color: red;
+    margin-bottom:0px;
+    padding-left: 90px;
+    font-family:'Segoe UI';
+    font-weight: bold;
+}
+/* .identidad{
+    width:40%;
+    height: 300px;  
+     padding-left: 60%;
+}*/
+.rounded.float-end{
+    width:40%;
+    height: 300px;  
+    padding-right: 1px;
+}
+.contenido{
+    color: white;
+    font-family: 'Secular One';
+   top:0px;
+   padding-left: 100px;
+}
+.h1{
+    font-family: 'Secular One';
+     padding-top:100px;
+    padding-left: 100px;
+}
+.btn.btn-danger{
+    color: black;
+    font-weight: bold;
+}

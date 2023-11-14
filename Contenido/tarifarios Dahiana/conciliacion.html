@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifario conciliaciÓn</title>
+    <script type="text/javascript">
+        function calcularTarifac(){
+   var ingresado=(document.getElementById('valorIngresado').value);
+var tarifa=0;
+var iva=19/100;
+var total_Iva=tarifa*iva;
+var porce1=1.8/100;
+var porcentaje=porce1;
+
+
+
+ /*  if(ingresado>0 && ingresado<=7500000){
+       tarifa=413484;
+  
+}*/
+if(ingresado!=0){
+    tarifa=413484;
+  
+}if(ingresado>=0 && ingresado<=7607641){
+    tarifa=266408;
+ }if(ingresado>=7607642&& ingresado<=12362701){
+    tarifa=389161;
+
+   
+}
+if(ingresado>=12362702&& ingresado<=16166522){
+    tarifa=457948;
+
+   
+}
+if(ingresado>=16166523 && ingresado<=33283903){
+    tarifa=635427;
+
+ }
+ if(ingresado>=33283904&& ingresado<=49450045){
+tarifa=758180;
+    }
+ if(ingresado>=49450046&& ingresado<=117812400){
+iva=19/100;
+ingresado=ingresado;
+porcentaje=porce1;
+  var porcentajeR=porcentaje.toFixed();
+  var redondeoI=iva.toFixed();
+    sumaIva=parseFloat(ingresado*porcentajeR);
+    var result=(sumaIva)+(redondeoI);
+ /* var totalR=sumaIva.toFixed;*/
+  document.write("su valor a pagar con los % es:"+result);
+
+}
+ if(ingresado>=836088001){
+    tarifa=27000000;
+
+ }
+ 
+/*document.write("La tarifa en pesos es:$"+tarifa+'<br></br>');
+
+total_Iva=tarifa*iva;
+var  total_IvaR=total_Iva.toFixed();
+document.write("Su valor  con IVA es:$"+total_IvaR+'<br></br>');
+var valorTotal=parseFloat(tarifa)+parseFloat(total_Iva);
+var  valorTotalR=valorTotal.toFixed();
+document.write("Su valor  total a pagar  es:$"+valorTotalR+'<br></br>');*/
+
+
+//organizando el codigo
+total_Iva = tarifa * iva;
+var total_IvaR = total_Iva.toFixed();
+	var valorTotal = parseFloat(tarifa) + parseFloat(total_Iva);
+	var valorTotalR = valorTotal.toFixed();
+  
+
+
+var contenedorResultado = document.getElementById("resultado");
+
+	// Creando etiqueta <p> #1
+	var resultado1 = document.createElement('p');
+	resultado1.innerText = "La tarifa en pesos es:$" + tarifa; // Agregando texto
+	
+	// Creando etiqueta <p> #2
+	var resultado2 = document.createElement('p');
+	resultado2.innerText = "Su valor con IVA es:$" + total_IvaR; // Agregando texto
+	
+	// Creando etiqueta <p> #3
+	var resultado3 = document.createElement('p');
+	resultado3.innerText = "Su valor total a pagar es:$" + valorTotalR; // Agregando texto
+// Creando etiqueta <p> #4
+	//var resultado4= document.createElement('p');
+	//resultado4.innerText = "Su valor total del % es:$" + totalR; // Agregando texto
+	// Agregando colores a etiquetas <p>
+	resultado1.style.color = '#0d47a1';
+	resultado2.style.color = '#0d47a1';
+	resultado3.style.color = '#0d47a1';
+	//resultado4.style.color = '#0d47a1';
+	// Reseteando contenido del resultado 
+	contenedorResultado.innerHTML = '';
+
+	// Agregando etiquetas <p> al contenedor del resultado
+	contenedorResultado.append(resultado1);
+	contenedorResultado.append(resultado2);
+	contenedorResultado.append(resultado3);
+//	contenedorResultado.append(resultado4);
+}
+
+function tama() {
+	getElementById("tam").style.fontSize = "100px";
+}
+</script>
+</head>
+<body>
+    <style>
+ tr,td{
+ 
+ background-color:#fff;
+ color: #0d47a1;
+ text-align: center;
+ width: 100px;
+}
+tr, th {
+ width: 25%;
+ text-align: left;
+ vertical-align: top;
+ border-collapse: collapse;
+ font-family: Arial;
+ font-weight: bold;
+}
+th{
+  background-color: #89c3ea;
+  color: #0d47a1;
+  font-family: Arial;
+  text-align: center;
+  padding-top: 10px;
+}
+.encabezado{
+  background-color:#4caf50;
+  text-align: center;
+ color: #fff;
+ font-family: Arial, Helvetica, sans-serif;
+  
+}
+.encabezado2{
+ background-color:#4caf50;
+ text-align: center;
+ padding-top: 20px;
+color: #fff;    
+font-family: Arial, Helvetica, sans-serif;
+font: weight bold;
+}
+.container{
+ width: 100%;
+ background-color:#0d47a1;
+ height: 90px;
+ text-align: center;
+ color: #fff;    
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ 
+}
+.container-fluid{
+width: 100%;
+background-color:#fff;
+height: 150px;
+padding-left: 5%;
+padding-right: 18%;
+}
+.ampliar{
+    height: 50px;
+    border: none;
+    width: 50PX;
+}
+.utv{
+    width: 10px;
+    background-color: #0d47a1;
+    color: #fff;
+}
+.utvV{
+    width: 10px;
+    background-color: #0d47a1;
+    color: #fff;
+    
+}
+#pse{
+  height: 350px;
+  top:20%;
+}
+.imagen{
+   display: block;
+   float: left;
+   border: 0;
+}
+
+    </style>
+    <div class="container-fluid">
+        <div>
+           <center>
+    <img src="imagenes/logo partners vector.png">
+   </center>
+       </div> 
+   <table border="1"cellpadding="0" cellspacing="0">
+       
+       
+       <thead>
+        <div class="container">
+            <p>SERVICIO DE CONCILIACIÓN</p>
+               <p>LIQUIDADOR DE TARIFAS</p>
+        </div>
+           <tr>
+        <th class="encabezado"colspan="3"><p>CUANTÍA DE LA PRESTACIÓN
+           SOMETIDA</p> <p>A CONCILIACIÓN</p>
+          <p> (VALORES EN U.V.T. AÑO 2022)</p></th>
+       <th class="encabezado2">TARIFA
+         <p>(UVT)</p></th>
+       <th class="encabezado2"colspan="4">VALOR A PAGAR</th>
+           </tr>
+         </thead>
+       <tr>
+           <th>CUANTíA</th>
+           <th>DESDE</th>
+           <th>HASTA</th>
+           <th>TARIFA</th>
+           <th>TARIFA EN PESOS </th>
+           <th>IVA</th>
+           <th colspan="2">VALOR TOTAL</th>
+       </tr>
+       <tr>
+           <td>Indeterminada</td>
+           <td></td>
+           <td></td>
+           <td>10,88</td>
+           <td>$413.484</td>
+           <td>$78.562</td>
+           <td>$492.045
+        </td>
+       </tr>
+       <tr>
+           <td>Menos de 200,18</td>
+           <td>$0</td>
+           <td>$7.607.641</td>
+           <td>7,01</td>
+           <td>$266.408</td>
+           <td>$50.618</td>
+           <td>$317.026</td>
+       </tr>
+       <tr>
+           <td>Más de 200,18 e igual a  325,30</td>
+           <td>$7.607.642</td>
+           <td>$12.362.701</td>
+           <td>10,24</td>
+           <td>$389.161</td>
+           <td>$73.941</td>
+           <td>$463.102</td>
+       </tr>
+       <tr>
+           <td>Más de 325,30 e igual a 425,39</td>
+           <td>$12.362.702</td>
+           <td>$16.166.522</td>
+           <td>12,05</td>
+           <td>$457.948</td>
+           <td>$87.010</td>
+           <td> $544.958</td>
+       </tr>
+       <tr>
+           <td>Más de 425,39 e igual a 875,80</td>
+           <td>$16.166.523</td>
+           <td>$33.283.903</td>
+           <td>16,72</td>
+           <td>$635.427</td>
+           <td>$120.731</td>
+           <td>$756.158</td>
+       </tr>
+       <tr>
+           <td>Más de 875,80 e igual a 1301,18</td>
+           <td>$33.283.904</td>
+           <td>$49.450.045</td>
+           <td>19,95</td>
+           <td>$758.180</td>
+           <td>$144.054</td>
+           <td>$902.234</td>
+       </tr>
+       <tr>
+           <td>Más de 1301,18 e igual a 3100</td>
+           <td>$49.450.046</td>
+           <td>$117.812.400</td>
+           <td>1,8%</td>
+           <th class="ampliar" colspan="3"></th>
+         
+     
+       <tr>
+           <td>Más de 3101 e igual a 6700</td>
+           <td>$117.812.401</td>
+           <td>$254.626.800</td>
+           <td>1,9%</td>
+           <th class="ampliar" colspan="3">MAS IVA</th>
+        </tr>
+          <tr>
+            <td>Más de 6701 e igual a 22000</td>
+           <td>$254.626.801</td>
+           <td>$836.088.000</td>
+           <td>3,0%</td>
+           <th class="ampliar" colspan="3"></th>
+          </tr>
+        <tr>
+           <td>Más de 22001</td>
+           <td>$836.088.001</td>
+           <td>∞<td>
+           <td>$27.000.000</td>
+           <td>$5.130.000</td>
+           <td>$32.130.000</td>
+           </tr>
+       </tr>
+       <th class="utv" colspan="3">U.V.T. AÑO 2022	</th>
+    <th class="utvV" colspan="4">$ 38.004</th>
+      </table>
+      <center>
+      <div>
+        <h5 class="texto"> Escriba el valor a conciliar:</h5>
+        <h5  style="color: red;"class="texto"> Nota:porfavor ingrese el valor sin . ni ,</h5>
+         <input type="text" class="caja" id="valorIngresado" name="valor">
+         <input type="button"id="tam" value="Calcular" onclick="calcularTarifac()">
+         <div id="resultado"></div>
+        </center>
+        
+	
+        <div>
+            <center>
+      <img src="imagenes/BotonPSE.png" onclick="location.href='https://www.pse.com.co/persona'" id="pse">
+         </div>
+        </div>
+</body>
+</html>
